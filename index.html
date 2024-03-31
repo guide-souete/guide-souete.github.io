@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Restaurant Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Paris Restaurant Guide</h1>
+        <p>Discover the best dining experiences in the heart of Paris, tailored to your taste and budget.</p>
+    </header>
+
+    <main>
+        <section id="search">
+            <select id="arrondissement">
+                <option value="">Select Arrondissement</option>
+                <!-- <option value="1er">1er Arrondissement</option>
+                <option value="2e">2e Arrondissement</option>
+                <option value="3e">3e Arrondissement</option>
+                <option value="4e">4e Arrondissement</option>
+                <option value="5e">5e Arrondissement</option>
+                <option value="6e">6e Arrondissement</option> -->
+                <option value="7e">7e Arrondissement</option>
+                <!-- <option value="8e">8e Arrondissement</option>
+                <option value="9e">9e Arrondissement</option>
+                <option value="10e">10e Arrondissement</option>
+                <option value="11e">11e Arrondissement</option>
+                <option value="12e">12e Arrondissement</option>
+                <option value="13e">13e Arrondissement</option> -->
+                <option value="14e">14e Arrondissement</option>
+                <option value="15e">15e Arrondissement</option>
+                <option value="16e">16e Arrondissement</option>
+                <!--<option value="17e">17e Arrondissement</option>
+                <option value="18e">18e Arrondissement</option>
+                <option value="19e">19e Arrondissement</option>
+                <option value="20e">20e Arrondissement</option> -->
+            </select>
+
+            <select id="priceRange">
+                <option value="">Select Price Range</option>
+                <option value="$">$</option>
+                <option value="$$">$$</option>
+                <option value="$$$">$$$</option>
+                <option value="$$$$">$$$$</option>
+            </select>
+        </section>
+        <div id="restaurants"></div>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Paris Restaurant Guide. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
