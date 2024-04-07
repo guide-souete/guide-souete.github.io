@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Populate listings with filtered data
     filteredRestaurants.forEach((restaurant) => {
-      const googleMapsUrl = `https://www.google.com/maps/place/?q=place_id:${restaurant.GoogleMapsPlaceID}`;
+      const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${restaurant.Address}&query_place_id=${restaurant.GoogleMapsPlaceID}`;
       const div = document.createElement("div");
       div.className = "restaurant";
       div.innerHTML = `
@@ -104,9 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <h2>${restaurant.Name}</h2>
               <p>Address: ${restaurant.Address || "N/A"}</p>
               <p>${restaurant.Arrondissement} Arrondissement</p>
-              <p>Rating: ${ratingToStars(
-                restaurant.Rating
-              )} (${restaurant.Rating.toFixed(1)}) from ${
+              <p>Rating: ${restaurant.Rating.toFixed(1)} from ${
         restaurant.NumberReviews
       } reviews</p>
               <p>Price Range: ${priceLevelToString(restaurant.Price)}</p>
