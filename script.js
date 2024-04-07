@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let homepageRestaurants = [];
 
   // Fetch and parse the best_all_homepage.csv for default homepage listings
-  fetch("best_all_homepage.csv")
+  fetch("restaurants.csv")
     .then((response) => response.text())
     .then((csvText) => {
       Papa.parse(csvText, {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   // Fetch and parse the main restaurants.csv for dropdown filtering
-  fetch("corrected_restaurants.csv")
+  fetch("restaurants.csv")
     .then((response) => response.text())
     .then((csvText) => {
       Papa.parse(csvText, {
